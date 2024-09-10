@@ -165,3 +165,7 @@ cython_debug/
 *.pdf
 *.html
 *.xlsx
+exercices/data/exercicios.aux
+exercices/data/exercicios.fdb_latexmk
+exercices/data/exercicios.fls
+exercices/data/exercicios.synctex.gz

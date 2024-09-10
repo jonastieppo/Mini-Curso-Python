@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage{siunitx}
+\title{Exercícios WorkShop de Python}
+\author{Jonas Tieppo da Rocha}
+\date{10/09/2024}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{enumerate}
+    \item O arquivo \verb|.\polimero\Specimen_RawData_1.csv| possuí dados de ensaio de um corpo de prova de PEAD. Para tal espécime:
+    \begin{enumerate}
+        \item Leia os dados dos arquivos, utilizando o pandas ou o \verb|ReadExperimentalData|;
+        \item Visualize os dados de força e deslocamento através de alguma biblioteca (matplotlib, searborn, plotly, por exemplo);
+        \item Limpe, se necessário, os dados e os transforme em termos de tensão e deformação. Para tal, considere uma espessura $t=\qty{3}{mm}$, largura $w_0=\qtylist{13}{mm}$ e comprimento $L_0=\qty{57}{mm}$.
+        \item Encontre o módulo de elasticidade e a tensão de escoamento.
+    \end{enumerate}
+    \item Utilizando a classe \verb |SeveralMechanicalTestingFittingLinear|, sabendo-se que o tipo da máquina é \verb|machineName = `68FM100'|,
+    e o material é \verb|materialType=`polymer'|, leia os dados dos corpos de prova localizados em \verb|\data\several_polymer| e analise os dados mecânicos.
+
+    \item Utilizando a classe \verb |SeveralMechanicalTestingFittingLinear|, sabendo-se que o tipo da máquina é \verb|machineName = `68FM100_biaxial'|,
+    e o material é \verb|materialType=`composite'|, leia os dados dos corpos de prova localizados em \verb|\data\several_composite| e analise os dados mecânicos. Utilize a norma ASTM-D3039. Para isso, configure 
+    o \newline \verb|calculus_method=`standard-ASTM-D3039'|. Não esqueceça de colocar \verb|direction = `parallel'|
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+\end{document}
